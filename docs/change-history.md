@@ -13,3 +13,6 @@ The main question that arises from this change is ... Do all Legendary Items hav
 ## Commit 3
 Added new NormalItem class to encapsulate the standard behaviour for those items that degrade normally over time.
 Added the first extra covering unit tests to verify the mechanics of the calculations using the "verified" output for the expected results.
+
+## Commit 4
+Quick refactor in the main GildedRose class to make further usage of the IUpdateQuality interface less impactful.

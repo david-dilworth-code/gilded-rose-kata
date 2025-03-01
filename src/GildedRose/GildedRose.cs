@@ -14,18 +14,10 @@ namespace GildedRoseKata
         {
             for (var i = 0; i < Items.Count; i++)
             {
-                // Handle all Legendary Items here
-                if (Items[i] is LegendaryItem)
+                // Handle items that can just update themself (Tell Don't Ask!)
+                if (Items[i] is IUpdateQuality)
                 {
-                    var item = Items[i] as LegendaryItem;
-                    item.UpdateQuality();
-                    continue;
-                }
-
-                // Handle all Normal Items here
-                if (Items[i] is NormalItem)
-                {
-                    var item = Items[i] as NormalItem;
+                    var item = Items[i] as IUpdateQuality;
                     item.UpdateQuality();
                     continue;
                 }
