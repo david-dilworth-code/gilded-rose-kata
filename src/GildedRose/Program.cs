@@ -11,7 +11,7 @@ namespace GildedRoseKata
 
             IList<Item> Items = new List<Item>{
                 new NormalItem("+5 Dexterity Vest", 10, 20),
-                new Item {Name = "Aged Brie", SellIn = 2, Quality = 0},
+                new ImprovingItem("Aged Brie", 2, 0),
                 new NormalItem("Elixir of the Mongoose", 5, 7),
                 new LegendaryItem("Sulfuras, Hand of Ragnaros", 0),
                 new LegendaryItem("Sulfuras, Hand of Ragnaros", -1),

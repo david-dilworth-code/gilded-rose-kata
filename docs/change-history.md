@@ -16,3 +16,6 @@ Added the first extra covering unit tests to verify the mechanics of the calcula
 
 ## Commit 4
 Quick refactor in the main GildedRose class to make further usage of the IUpdateQuality interface less impactful.
+
+## Commit 5
+Added new ImprovingItem class to encapsulate the behaviour for items that improve in Quality over time.
