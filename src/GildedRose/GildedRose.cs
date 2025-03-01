@@ -22,6 +22,14 @@ namespace GildedRoseKata
                     continue;
                 }
 
+                // Handle all Normal Items here
+                if (Items[i] is NormalItem)
+                {
+                    var item = Items[i] as NormalItem;
+                    item.UpdateQuality();
+                    continue;
+                }
+
                 if (Items[i].Name != "Aged Brie" && Items[i].Name != "Backstage passes to a TAFKAL80ETC concert")
                 {
                     if (Items[i].Quality > 0)
