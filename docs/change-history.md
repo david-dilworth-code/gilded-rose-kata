@@ -34,3 +34,12 @@ Finally the new requirement for "conjured items" can be developed.
 Following the new pattern there is a new class called ConjuredItem to encapsulate the required behaviour.
 This is the one and only time that the "verified" tests had to be changed, but that was expected because this is a new requirement.
 One question at this stage is ...Do Conjured Items always degrade twice as fast as Normal items?
+
+## Commit 9
+There are no code changes with this commit and the sole purpose is to add these extra comments.
+
+The concept of an item that changes value over time during a fixed Selling Period (and then becomes worthless) is the exact problem that a Revenue Management System (RMS) solves for an airline (like easyJet). A ticket (or seat) on an aircraft is a finite time-limited asset that needs to be sold at the optimal price to any given customer at any time in order to maximize revenue.
+
+In addition, the concept that an item can change Quality over time with different behaviour before and after a fixed point in time is very similar to the problem of collecting outstanding money for unpaid invoices. The communication strategy used before the Invoice Due Date can be very different to the communication strategy that is used once the Invoice becomes overdue.
+
+Both of these problem domains face a similar challenge from a software development perspective of how to implement and test temporal concepts (i.e. "now", in five days, at the end of the month). The NodaTime library provides an IClock interface and associated FakeClock class that can be used to build a system with temporal testing in mind.
