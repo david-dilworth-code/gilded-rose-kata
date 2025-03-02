@@ -22,3 +22,9 @@ Added new ImprovingItem class to encapsulate the behaviour for items that improv
 
 ## Commit 6
 Added new TicketItem class to encapsulate the behaviour for Tickets (backstage passes). These items have a complex quality model.
+
+## Commit 7
+The current behaviour for "conjured items" appears to be the same as the NormalItem.
+This minor refactor demonstrates this is true by converting the input data to use another instance of a NormalItem.
+All of the complex logic in the GildedRose class can be removed at this point.
+An important question is now raised ... What should happen going forwards with items that do not implement the IUpdateQuality interface?

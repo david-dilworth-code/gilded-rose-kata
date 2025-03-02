@@ -11,7 +11,7 @@ namespace GildedRoseTests
         {
             const string expectedName = "foo";
 
-            IList<Item> Items = new List<Item> { new Item { Name = expectedName, SellIn = 0, Quality = 0 } };
+            IList<Item> Items = new List<Item> { new NormalItem(expectedName, 0, 0) };
             GildedRose app = new GildedRose(Items);
             app.UpdateQuality();
             Assert.Equal(expectedName, Items[0].Name);
