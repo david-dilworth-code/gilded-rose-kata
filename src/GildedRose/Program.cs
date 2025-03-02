@@ -33,8 +33,7 @@ namespace GildedRoseKata
                     5,
                     49
                 ),
-				// this conjured item does not work properly yet
-				new NormalItem ("Conjured Mana Cake", 3, 6)
+				new ConjuredItem ("Conjured Mana Cake", 3, 6)
             };
 
             var app = new GildedRose(Items);

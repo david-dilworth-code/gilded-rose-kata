@@ -23,3 +23,11 @@ So whilst it is technically possible to create an Item and add it to the collect
 
 Assumption: For the purpose of this kata there are no instances of the Item class remaining and it can be considered "Not A Problem".
 (Note: In the real world this is very much a potential problem and it would require further analysis and discussion)
+
+
+Q: Do Conjured Items always degrade twice as fast as Normal items?
+The purpose of this question is to understand whether there is some kind of direct link between a Normal Item and a Conjured Item.
+If the rate that a Normal Item degrades were to change in the future does that impact the rate that a Conjured Item degrades or not?
+
+Assumption: For simplicity the values used to degrade the Quality for a Conjured Item are hard-coded (as twice that of a Normal Item).
+A further discussion would be required to understand the relationship (if any) between a Normal Item and a Conjured Item.

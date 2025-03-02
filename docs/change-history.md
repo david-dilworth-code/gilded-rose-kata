@@ -28,3 +28,9 @@ The current behaviour for "conjured items" appears to be the same as the NormalI
 This minor refactor demonstrates this is true by converting the input data to use another instance of a NormalItem.
 All of the complex logic in the GildedRose class can be removed at this point.
 An important question is now raised ... What should happen going forwards with items that do not implement the IUpdateQuality interface?
+
+## Commit 8
+Finally the new requirement for "conjured items" can be developed.
+Following the new pattern there is a new class called ConjuredItem to encapsulate the required behaviour.
+This is the one and only time that the "verified" tests had to be changed, but that was expected because this is a new requirement.
+One question at this stage is ...Do Conjured Items always degrade twice as fast as Normal items?

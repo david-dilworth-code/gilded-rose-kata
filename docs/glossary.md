@@ -2,6 +2,7 @@
 
 | Term | Description |
 | --- | ----------- |
+| Conjured Item | An item that degrades in Quality over time. During the Selling Period the item will degrade in Quality by 2. After the Selling Period reaches zero the item will degrade in Quality by 4. |
 | Improving Item | An item that improves in Quality over time. During the Selling Period the item will improve in Quality by 1. After the Selling Period reaches zero the item will improve in Quality by 2. |
 | Legendary Item | An item that does not have to be sold within a specific time and has a fixed Quality value of 80. |
 | Normal Item | An item that degrades in Quality over time. During the Selling Period the item will degrade in Quality by 1. After the Selling Period reaches zero the item will degrade in Quality by 2. |
