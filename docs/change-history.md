@@ -19,3 +19,6 @@ Quick refactor in the main GildedRose class to make further usage of the IUpdate
 
 ## Commit 5
 Added new ImprovingItem class to encapsulate the behaviour for items that improve in Quality over time.
+
+## Commit 6
+Added new TicketItem class to encapsulate the behaviour for Tickets (backstage passes). These items have a complex quality model.
